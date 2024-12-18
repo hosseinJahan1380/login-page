@@ -28,6 +28,13 @@ a{
     text-decoration: none;
     font-family: 'Open Sans', sans-serif;
     font-size: 15px;
+    color:#2196F3;
+}
+button{
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Open Sans', sans-serif;
 }
 .container{
     border: 1px solid #333;
@@ -39,7 +46,7 @@ a{
     box-shadow:  5px 5px 41px #90aaae,
                 -5px -5px 41px #ffffff;
 }
-.box{
+.box.input{
     width: 100%;
     position: relative;
     padding: 3px 0;
@@ -63,4 +70,35 @@ a{
 .member-container{
     padding: 10px 2px;
     text-align: start;
+}
+.login{
+    background-color: #4CAF50;
+    color:#fff;
+    padding: 8px 20px;
+    width: 100%;
+    font-size: 20px;
+    margin: 10px 0;
+}
+.login-options{
+   display: flex;
+   justify-content: space-between;
+   margin: 10px 0;
+}
+.box-google , .box-facebook{
+    position: relative;
+    border: 1px solid #333;
+}
+.box-google i , .box-facebook i{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 3px;
+}
+.box-google i{
+    color: #4285F4;
+}
+.login-via-google{
+    width: 100%;
+    background-color: #fff;
+    padding: 8px 25px;
 }
