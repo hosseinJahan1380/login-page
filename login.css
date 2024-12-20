@@ -37,11 +37,11 @@ button{
     outline: none;
     border: none;
     font-family: 'Open Sans', sans-serif;
+    cursor: pointer;
 }
 .container{
     padding: 30px 20px;
     width: 400px;
-    /* min-height: 390px; */
     text-align: center;
     border-radius: 18px;
     background: #cbeff5;
@@ -86,7 +86,6 @@ button{
     color:#fff;
     padding: 8px 20px;
     width: 95%;
-    letter-spacing: 4px;
     font-size: 20px;
     border-radius: 10px;
     margin: 10px 0;
@@ -95,7 +94,7 @@ button{
 .login:hover{
     opacity: 0.75;
     transform: scale(1.03);
-    letter-spacing: 0;
+    letter-spacing: 4px;
 }
 .login-options{
    display: flex;
