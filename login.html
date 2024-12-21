@@ -7,6 +7,9 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel="stylesheet">
     <link rel="stylesheet" href="login.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@400;700&family=Lato:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <div class="container">
@@ -15,16 +18,16 @@
             <h2>Sign In</h2>
             <div class="box input">
                 <i class='bx bx-envelope'></i>
-                <input type="email" placeholder="email">
+                <input type="email" placeholder="email" autocomplete="off" required>
             </div>
 
             <div class="box input">
                 <i class='bx bx-key' ></i>
-                <input type="password" placeholder="password">
+                <input type="password" placeholder="password" autocomplete="new-password" required>
             </div>
 
             <div class="member-container">
-                <a href="#" class="forgot-password">forgot password?</a>
+                <a href="#" class="forgot-password" id="forgot-password-link">forgot password?</a>
             </div>
             
             <button class="login">Login</button>
@@ -51,17 +54,17 @@
 
             <div class="box input">
                 <i class='bx bx-user' ></i>
-                <input type="text" placeholder="username">
+                <input type="text" placeholder="username" autocomplete="off" required>
             </div>
 
             <div class="box input">
                 <i class='bx bx-envelope'></i>
-                <input type="email" placeholder="email">
+                <input type="email" placeholder="email" autocomplete="off" required>
             </div>
 
             <div class="box input">
                 <i class='bx bx-key' ></i>
-                <input type="password" placeholder="password">
+                <input type="password" placeholder="password" autocomplete="new-password" required>
             </div>
 
             
@@ -72,6 +75,7 @@
             </div>
 
         </form>
+
         <!-- forgot password section -->
         <form id="forgot-password-form" class="hidden">
             <h2>Forgot Password</h2>
@@ -86,5 +90,6 @@
         </form>
 
     </div>
+    <script src="login-page.js"></script>
 </body>
 </html>
