@@ -10,7 +10,8 @@
 </head>
 <body>
     <div class="container">
-        <form action="">
+        <!-- sign In section -->
+        <form action="" id="sign-in-form" class="active">
             <h2>Sign In</h2>
             <div class="box input">
                 <i class='bx bx-envelope'></i>
@@ -23,13 +24,12 @@
             </div>
 
             <div class="member-container">
-                <a href="" class="forgot-password">forgot password?</a>
+                <a href="#" class="forgot-password">forgot password?</a>
             </div>
             
             <button class="login">Login</button>
 
             <div class="login-options">
-                
                 <div class="box-google">
                     <i class='bx bxl-google' ></i>
                     <button class="login-via-google">Google</button>    
@@ -39,13 +39,52 @@
                     <i class='bx bxl-facebook-circle' ></i>
                     <button class="login-via-facebook">Facebook</button>
                 </div>
-          
             </div>
 
             <div class="no-account">
-                <p>Don't have an account? <a href="">sign up</a></p>
+                <p>Don't have an account? <a href="#" id="sign-up-link">sign up</a></p>
             </div>
         </form>
+        <!-- sign up section -->
+        <form action="" id="sign-up-form" class="hidden">
+            <h2>Sign Up</h2>
+
+            <div class="box input">
+                <i class='bx bx-user' ></i>
+                <input type="text" placeholder="username">
+            </div>
+
+            <div class="box input">
+                <i class='bx bx-envelope'></i>
+                <input type="email" placeholder="email">
+            </div>
+
+            <div class="box input">
+                <i class='bx bx-key' ></i>
+                <input type="password" placeholder="password">
+            </div>
+
+            
+            <button class="login">Sign Up</button>
+
+            <div class="no-account">
+                <p>Already have an account? <a href="#" id="sign-in-link">Sign in</a></p>
+            </div>
+
+        </form>
+        <!-- forgot password section -->
+        <form id="forgot-password-form" class="hidden">
+            <h2>Forgot Password</h2>
+
+            <div class="box input">
+                <i class='bx bx-envelope'></i>
+                <input type="email" placeholder="Enter your email">
+            </div>
+
+            <button class="login">Submit</button>
+       
+        </form>
+
     </div>
 </body>
 </html>
