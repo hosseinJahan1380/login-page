@@ -23,8 +23,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
         sign_up_page.classList.add("hidden")
         sign_in_page.classList.remove("hidden")
-        document.body.style.backgroundColor = "#52ACFF"
-        document.body.style.backgroundImage = "linear-gradient(270deg, #52ACFF 25%, #FFE32C 100%)"
+        // document.body.style.backgroundColor = "#52ACFF"
+        document.body.style.backgroundImage = "linear-gradient(to right, #a18cd1, #fbc2eb)"
     })
 
     forgot_password_link.addEventListener("click" ,(e)=>{
